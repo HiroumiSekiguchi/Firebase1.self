@@ -47,7 +47,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
     @IBAction func postButton(_ sender: UIButton) {
         
         // ☆☆☆Firebaseにデータの諸々を保存する☆☆☆ //
-        let ref = Database.database().reference(fromURL: "https://fir-1-self.firebaseio.com/").childByAutoId()
+        let ref = Database.database().reference(fromURL: "https://fir-1-self.firebaseio.com/").child("post").childByAutoId()
         
         let feed = [
             "userName": label.text!,
