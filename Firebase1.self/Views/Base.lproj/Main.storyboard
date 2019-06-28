@@ -31,7 +31,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U4R-8s-pek" kind="show" id="yg6-b2-mLr"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLj-GR-49k"/>
+                                    <segue destination="U4R-8s-pek" kind="push" identifier="start" id="yg6-b2-mLr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,6 +86,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6SF-3G-1iD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CEX-Md-P4x"/>
                     <connections>
                         <outlet property="tableView" destination="8pV-8i-KsI" id="wgc-ja-2ki"/>
                     </connections>

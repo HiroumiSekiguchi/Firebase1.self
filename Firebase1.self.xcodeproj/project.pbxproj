@@ -70,12 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				1E276DFC22C60BCD007EC232 /* AppDelegate.swift */,
-				1E276E1222C614BB007EC232 /* Controllers */,
+				1E276E1922C62091007EC232 /* Models */,
 				1E276E1322C614C9007EC232 /* Views */,
+				1E276E1222C614BB007EC232 /* Controllers */,
 				1E276E1422C614D7007EC232 /* Supporting Files */,
 				1E276E0822C60BCE007EC232 /* Info.plist */,
 				1E276E1722C61E88007EC232 /* GoogleService-Info.plist */,
-				1E276E1522C619B9007EC232 /* Post.swift */,
 			);
 			path = Firebase1.self;
 			sourceTree = "<group>";
@@ -105,6 +105,14 @@
 				1E276E0522C60BCE007EC232 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E276E1922C62091007EC232 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E276E1522C619B9007EC232 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		592624818DC4F72D939E3F9B /* Frameworks */ = {
