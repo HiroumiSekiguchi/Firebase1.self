@@ -23,8 +23,6 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
         tableView.delegate = self
         tableView.dataSource = self
         
-        
-        
     }
     
     
@@ -36,7 +34,7 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        <#code#>
+        return posts.count
         
     }
     
