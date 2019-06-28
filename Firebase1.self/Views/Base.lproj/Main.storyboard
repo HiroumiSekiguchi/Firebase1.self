@@ -32,13 +32,15 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLj-GR-49k"/>
-                                    <segue destination="U4R-8s-pek" kind="push" identifier="start" id="yg6-b2-mLr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="U4R-8s-pek" kind="presentation" identifier="start" id="WVd-YV-OIm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +124,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQY-17-Wqe">
-                                <rect key="frame" x="135" y="156" width="192" height="29"/>
+                                <rect key="frame" x="135" y="157" width="192" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -152,7 +154,7 @@
                         <viewLayoutGuide key="safeArea" id="IP3-hw-GnY"/>
                     </view>
                     <connections>
-                        <outlet property="displayName" destination="RQY-17-Wqe" id="l3r-Qn-3BL"/>
+                        <outlet property="label" destination="RQY-17-Wqe" id="1Ld-qY-yAM"/>
                         <outlet property="textField" destination="cOV-eO-CPB" id="mPZ-Py-FjG"/>
                         <outlet property="userImage" destination="4Ke-ZU-yu5" id="Zsn-QC-NcV"/>
                     </connections>
