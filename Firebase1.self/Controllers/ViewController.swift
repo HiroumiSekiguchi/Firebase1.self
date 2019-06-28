@@ -26,15 +26,7 @@ class ViewController: UIViewController, LineSDKLoginDelegate {
     }
     
     
-    // ログインボタンがタップされた時の処理
-    @IBAction func loginButton(_ sender: UIButton) {
-        
-        LineSDKLogin.sharedInstance().start()
-        
-    }
-    
-    
-    // LineSDKによるログイン処理
+    // LINEログインで色々情報を取得できるが、それらは全て「profile」の中に入ってくる
     func didLogin(_ login: LineSDKLogin, credential: LineSDKCredential?, profile: LineSDKProfile?, error: Error?) {
         
         // LINESDKの「displayName」と「pictureURL」の情報をそれぞれ「self.displayName」と「self.pictureURLString」に格納
@@ -50,6 +42,14 @@ class ViewController: UIViewController, LineSDKLoginDelegate {
         UserDefaults.standard.set(self.pictureURLString, forKey: "pictureURLString")
         
         performSegue(withIdentifier: "start", sender: nil)
+        
+    }
+    
+    
+    // ログインボタンがタップされた時の処理
+    @IBAction func loginButton(_ sender: UIButton) {
+        
+        LineSDKLogin.sharedInstance().start()
         
     }
 
